@@ -10,14 +10,16 @@
 .content
   .header
     .score
-      Score:
+      Suspicion:
       %span.scorevalue NaN
     .chars
       Characters left:
       %span.charsvalue NaN
   .gamearea
-    %textarea.input
-      Tell us about your day... we're listening.
+    .wrapper
+      .highlighter
+      %textarea.input
+        Loading...
 
 :javascript
    var _gaq = _gaq || [];

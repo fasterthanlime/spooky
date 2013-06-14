@@ -15,7 +15,7 @@ body
 body, textarea
   font-family: "Courier New", Courier, monospace
 
-.header, .input
+.header, .gamearea
   padding: 30px
 
 .score
@@ -39,12 +39,38 @@ body, textarea
     font-style: italic
 
   .gamearea
+    background: rgb(32, 32, 32)
 
-    .input
+    .wrapper
       width: 100%
       height: 440px
-      background: rgb(32, 32, 32)
       border: none
-      font-size: 20px
-      color: white
+      position: relative
+
+      .highlighter, .input
+        font-size: 20px
+        color: white
+        position: absolute
+        left: 0
+        top: 0
+        right: 0
+        bottom: 0
+
+      .input
+        border: none
+        background: transparent
+        padding: 0
+        margin: 0
+        width: 100%
+        height: 100%
+
+      .highlighter
+        z-index: 2
+        background: transparent
+        pointer-events: none
+        color: rgba(0, 0, 0, 0)
+
+        span
+          background-color: white
+          color: black
 
