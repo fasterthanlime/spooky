@@ -8,13 +8,11 @@ class Game
 
     @score = 0
 
-    $('.content').css('opacity', 0.5)
     @fetch()
 
   fetch: ->
-    $.get 'words.json', (data) =>
+    $.ajax('words.json?v3', { dataType: 'json' }).done (data) =>
       @words = data.words
-      $('.content').css('opacity', 1.0)
       @update()
       @initEvents()
 
