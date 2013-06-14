@@ -1,0 +1,22 @@
+
+%title Spooky
+
+%link{:href=> 'spooky.min.css', :rel => 'stylesheet'}
+
+%script{:src => 'jquery.js'}
+
+%script{:src => 'spooky.min.js'}
+
+.content
+  .header
+    .score
+      Score:
+      %span.scorevalue NaN
+    .chars
+      Characters left:
+      %span.charsvalue NaN
+  .gamearea
+    %textarea.input
+      Tell us about your day... we're listening.
+
+

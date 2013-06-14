@@ -1,0 +1,9 @@
+
+# sass crap
+.sass-cache
+
+# our own crap
+output
+
+# OSX crap - seriously, cut it out
+.DS_Store
